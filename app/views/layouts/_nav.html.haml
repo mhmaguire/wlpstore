@@ -1,0 +1,17 @@
+%li
+  = link_to 'Store', root_path, :class => "noneL"
+%li
+  = link_to 'Products', '/line_card'
+%li
+  = link_to 'Events', '/events' 
+%li
+  = link_to 'Who We Are', '/about'
+%li
+  = link_to 'What We Do', '/what_we_do'
+%li
+  = link_to 'Contact', '/contact', remote: true
+%li
+  = link_to 'Careers', '/careers'
+%li
+  %a{href:'#', id: 'avidLink'}
+    =image_tag "avid-logo-small.png", :id => "avidLogo"

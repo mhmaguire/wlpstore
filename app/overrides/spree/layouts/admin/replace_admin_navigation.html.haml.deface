@@ -1,0 +1,3 @@
+/replace_contents "li[data-hook='user-logout-link']"
+%i.icon-signout
+<%= link_to Spree.t(:logout), spree.logout_path %>

@@ -1,0 +1,9 @@
+%header#mainHead.gradientBack
+  #logo.three.columns
+    %h1
+      =link_to 'Westlake Pro', root_path
+  #mainNavRow.nine.columns
+    %nav#mainNav
+      %ul
+        =render partial: 'layouts/nav'
+  = image_tag ('menuTrigger.png'), :class => "mobileNavTrigger onlyMobile"
