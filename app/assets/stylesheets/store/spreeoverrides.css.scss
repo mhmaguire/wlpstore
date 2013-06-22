@@ -1,0 +1,64 @@
+html input[type="submit"],html input[type="button"],
+html input[type="reset"],html button,html a.button {
+	background-color:rgb(170,170,170);
+	border: 1px solid rgb(120,120,120);
+	color:white;
+}
+
+nav#taxonomies{
+	.taxonomy-root{
+		font-size:1.5em;
+		line-height:2em;
+	}
+}
+
+span.price.selling{
+		color:rgb(180,80,80) !important;
+}
+div.product-image:hover, ul#product-thumbnails li.selected, ul#product-thumbnails li:hover{border:1px solid rgb(180,80,80) !important;}
+
+#wrapper {
+	margin-top:20px;
+}
+
+
+////////Layout Overrides
+.spreeHeader{
+	>div, >nav{
+		float:left;
+	}
+	#logo{
+		width:15%;
+		h2 {
+			text-align:right;
+			font-size:2.3em;
+			margin-top:9px;
+			a{
+				font-family:'Roboto', 'Myriad Pro', sans-serif;
+				font-weight:bold;
+			}
+		}
+	}
+	#mainNav{
+		width:58%;
+		margin-left:7%;
+		text-align: center;
+		height:70px;
+		a{
+			margin-left:2%;
+		}
+	}
+	#logIn{
+		width:19%;
+		.button{
+			float:right;
+			width:53px;
+			text-align:center;
+		}
+	}
+}
+
+#mainFoot.spreeFooter {
+	width:auto;
+	height:auto;
+}
