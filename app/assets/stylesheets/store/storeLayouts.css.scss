@@ -1,0 +1,206 @@
+///////
+/////////Link & Text Styles
+body{
+	font-size:13px;
+	background-image:url(asset-path('sales_bg.jpg', image));
+	background-attachment:fixed;
+	background-position:top center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+a:link{
+	color:$textColor2;
+}
+a:visited{
+	color:$textColor2;
+}
+a:hover{
+	color:darken($textColor2,20%) !important;
+}
+.button {
+	border-radius: 5px;
+	border:1px solid rgba(140,140,140,.5);
+	padding:10px 10px 8px;
+}
+
+///Social
+.socialIcon {
+	width:35px;
+	height:35px;
+	display:inline-block;
+	background-size:95%;
+	background-repeat:no-repeat;
+}
+.fb{
+	background-image:url(asset-path('fb1.png', image));
+	&:hover{
+		background-image:url(asset-path('fb2.png', image));
+	}
+}
+.tw{
+	background-image:url(asset-path('tw1.png', image));
+	&:hover{
+		background-image:url(asset-path('tw2.png', image));
+	}
+}
+.li{
+	background-image:url(asset-path('li1.png', image));
+	&:hover{
+		background-image:url(asset-path('li2.png', image));
+	}
+}
+///
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:$headFont;
+	font-weight:400 !important;
+}
+
+p, a, li, span {
+	margin-bottom:0px;
+	font-family:$bodyFont;
+}
+
+#wrapper {
+	#sidebar, #content {
+		*{
+			color:$textColor1;
+		}
+		a:hover{
+			color:$storeAccent1 !important;
+		}
+		table tbody tr.odd{
+			td, td strong{
+				color:$textColor2;
+			}
+		}
+	}
+}
+
+//
+//////////Template 
+body, html {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+
+body{
+	background-color:$bgColor1 !important;
+}
+
+#mainHead {
+	padding:$contentPadding;
+	&.spreeHeader{width:auto;}
+	max-width:$contentMax;
+	min-width:$contentMin;
+	min-height:45px;
+	margin:$contentMargin;
+	box-shadow: 0px 0px 7px 3px rgba(255, 255, 255, 0.5);
+	border-radius:5px;
+	position:relative;
+	top:10px;
+	z-index: 8;
+	overflow:auto;
+}
+#logo{
+	margin:.4em 0 0;
+	height:inherit;
+	width:25%;
+	h1{
+		text-align:center;
+		font-size:2em;
+	  min-width: 170px;
+	  margin:2px 0 0;
+	  a{
+			font-family:'Futura', 'Myriad Pro', arial, sans-serif;
+		}
+	}
+}
+#mainNavRow{width:75%;}
+#mainNav{
+	width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+	margin:0 auto;
+	overflow-y:hidden;
+	padding:5px 5px 0;
+	ul{margin:0;}
+	li {
+		margin-top:-7px;
+		margin-left:-3px;
+		padding:.5em 0 0;
+		display:inline-block;
+		white-space:nowrap;
+		&:nth-child(9){
+			position:relative;
+			top:6px;
+		}
+		a {
+			display:inherit;
+			height:100%;
+			font-size:1.3em;
+			padding:.4em .5em .2em;
+			border-right:$rightBorder;
+			border-left:$leftBorder;
+			&.noneL{border-left:none !important;}
+			&#avidLink{border-right:none !important;}
+		}
+	}
+}
+#logo, #mainNavRow{
+	position:relative;
+	float: left;
+}
+#avidLogo{
+	max-height:19px;
+	position: relative;
+	top:-2px;
+}
+#mainContent{
+	min-width:$contentMin;
+	max-width:$contentMax;
+	margin:$contentMargin;
+	height:100%;
+	padding-bottom:$footHeight;
+}
+#mainFoot{
+	width:100%;
+	padding:$contentPadding;
+	min-height:$footHeight;
+	position:fixed;
+	bottom:0px;
+	z-index:10;
+	background-color:rgb(220,220,220);
+	box-shadow: 0px 0px 3px 2px rgba(255, 255, 255, 0.6);
+	&.spreeFooter{
+		position:static !important;
+	}
+	>div{
+		float:left;
+	}
+	span{
+		height:100%;
+		padding-top:1em;
+		font-size:.95em;
+		float:left;
+		text-align: center;
+		margin-left:1.5%;
+	}
+	#fGroup1 span:first-child{
+		margin-left:0;
+	}
+}
+#footCopy{width:83%;}
+#footSocial{
+	width:12%;
+	min-width:120px;
+	margin-top:.2em;
+	a{
+		float:right;
+		margin-left:5px;
+		&:nth-child(3){margin-left:0;}
+	}
+}
