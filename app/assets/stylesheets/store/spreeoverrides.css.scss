@@ -1,64 +1,93 @@
 html input[type="submit"],html input[type="button"],
 html input[type="reset"],html button,html a.button {
-	background-color:rgb(170,170,170);
-	border: 1px solid rgb(120,120,120);
-	color:white;
+	border-radius: 5px;
+	border:1px solid rgba(140,140,140,.5);
+	padding:10px 10px 8px;
+	color:$textColor2 !important;
+	@extend .gradientBack;
+	&:hover{
+		@extend .gradientBack2;
+	}
 }
 
+/////////////////sidebar
 nav#taxonomies{
 	.taxonomy-root{
 		font-size:1.5em;
 		line-height:2em;
 	}
+	ul.taxons-list {			
+	list-style: none;
+		li::before {
+			display:inline-block;
+				margin-right:1em;
+				position:relative;
+				top:-4px;
+				content: '>';
+				color:white;
+				text-align:center;
+				font-size:.5em;
+				line-height:10px;
+				width:10px;
+				border-radius:10px;
+				background-color:rgb(50,50,50);
+				border:1px solid white;
+		}
+		a {
+			font-size:1.5em;
+			line-height:1.2em;
+		}
+	}
+}
+div.navigation{
+	.filter_choices{
+		list-style-type:none;
+	}
 }
 
+/////////// List View
 span.price.selling{
-		color:rgb(180,80,80) !important;
+		color:$storeAccent1 !important;
 }
-div.product-image:hover, ul#product-thumbnails li.selected, ul#product-thumbnails li:hover{border:1px solid rgb(180,80,80) !important;}
+div.product-image:hover, ul#product-thumbnails li.selected, ul#product-thumbnails li:hover{
+	border:1px solid $storeAccent1 !important;
+}
 
 #wrapper {
 	margin-top:20px;
 }
 
-
-////////Layout Overrides
-.spreeHeader{
-	>div, >nav{
-		float:left;
+ul#products li {
+	.product-image{
+		box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.5);
+		border-radius:5px;
 	}
-	#logo{
-		width:15%;
-		h2 {
-			text-align:right;
-			font-size:2.3em;
-			margin-top:9px;
-			a{
-				font-family:'Roboto', 'Myriad Pro', sans-serif;
-				font-weight:bold;
-			}
+	&:hover{
+		.product-image{	
+			box-shadow: 0px 0px 7px 3px $storeAccent1;
 		}
+		a.info{color:$storeAccent1 !important;}
 	}
-	#mainNav{
-		width:58%;
-		margin-left:7%;
-		text-align: center;
-		height:70px;
-		a{
-			margin-left:2%;
-		}
+	a.info{
+		font-size:1.3em;
+		line-height:1.3em;
+		text-align:right;
+		padding:.75em 0;
 	}
-	#logIn{
-		width:19%;
-		.button{
-			float:right;
-			width:53px;
-			text-align:center;
-		}
+	span.price.selling{
+		font-size:1.5em;
+		margin-top:.5em;
+		text-align: right;
 	}
 }
 
-#mainFoot.spreeFooter {
-	width:auto;
-	height:auto;
+#breadcrumbs li{
+	a{
+		color:white;
+	}
+	a:hover{
+		color:$storeAccent1 !important;
+	}
 }
+
+///////////// Product View
