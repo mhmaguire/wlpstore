@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/spree/spree_auth_devise.git
-  revision: cbc7c78a5b77e54770edf1f1eac40a695d83257a
+  revision: 5826881e474341132fe90b706b2001ccdf8660e5
   branch: 2-0-stable
   specs:
     spree_auth_devise (2.0.0)
@@ -140,7 +140,7 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    meta_request (0.2.6)
+    meta_request (0.2.7)
       callsite
       rack-contrib
       railties
@@ -149,8 +149,6 @@ GEM
       i18n (~> 0.6.0)
     multi_json (1.7.7)
     multi_xml (0.5.4)
-    mysql2 (0.3.11)
-    mysql2 (0.3.11-x86-mingw32)
     nokogiri (1.5.10)
     nokogiri (1.5.10-x86-mingw32)
     nori (1.1.5)
