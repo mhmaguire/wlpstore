@@ -10,9 +10,9 @@
       %span
         %a{:href => "https://maps.google.com/maps?daddr=4101+Lankershim+Blvd,+Los+Angeles,+CA+91602&hl=en&ll=34.142711,-118.357086&spn=0.041841,0.083685&sll=34.144202,-118.362441&sspn=0.01046,0.020921&gl=us&mra=ls&t=m&z=14", :target => "blank"} Directions
       %span.noMobile
-        =link_to "Site Map", '/site_map'
+        <%=link_to "Site Map", '/site_map' %>
       %span
-        =link_to "Privacy Policy", '/privacy_policy'
+        <%=link_to "Privacy Policy", '/privacy_policy' %>
       %span
         Site by
         %a{:href => "mailto:david.w.martin@me.com"} edG Design
