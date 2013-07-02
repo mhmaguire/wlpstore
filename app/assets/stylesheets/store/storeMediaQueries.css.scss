@@ -150,6 +150,12 @@ and (orientation : portrait) {
 			clear:both;
 		}
 	}
+	ul#products li{
+		margin-right:0;
+		&:nth-child(odd){
+			margin-right:15px;
+		}
+	}
 //end mobile styles
 }
 
