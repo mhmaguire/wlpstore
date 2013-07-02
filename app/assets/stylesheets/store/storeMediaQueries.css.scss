@@ -71,6 +71,9 @@ and (orientation : portrait) {
 ////////Mobile Styles
 @media (min-device-width:768px) {
 	.onlyMobile{display:none;}
+	#contactPage{
+		@extend .gradientBack2;
+	}
 }
 @media (max-device-width: 767px) {
 	.noMobile{display:none;}
@@ -123,24 +126,34 @@ and (orientation : portrait) {
 	}
 	#mainFoot{
 		height:auto;
-		min-height:150px;
+		min-height:210px;
+		box-shadow: none;
 		#footCopy{
 			width:100%;
 			span{margin:.1em 0;}
 		}
-		#fGroup1 span{
-			width:100%;
-			text-align:center;
-		}
-		#fGroup2 span {
-			a{text-decoration:underline;}
-			width: 33%;
-			text-align:center;
-			&:nth-child(4){
+		>span{
 				width:100%;
 				text-align:center;
-				clear:both;
-				//margin-left:-2px;
+				margin-top:5px;
+			}
+		#fGroup1,#fGroup2{
+			float: left;
+		}
+		#fGroup1{
+			width:58%;
+			margin:-8px 2% 0 0;
+			span{
+				font-size:1.3em;
+				text-align: left;
+			}
+		}
+		#fGroup2{
+			width:40%;
+			span{
+				text-align:left;
+				width:100%;
+				a{color:#50b0c5;}
 			}
 		}
 		#footSocial{
@@ -148,6 +161,12 @@ and (orientation : portrait) {
 			padding-top:1em;
 			float:none;
 			clear:both;
+		}
+	}
+	ul#products li{
+		margin-right:0;
+		&:nth-child(odd){
+			margin-right:15px;
 		}
 	}
 //end mobile styles

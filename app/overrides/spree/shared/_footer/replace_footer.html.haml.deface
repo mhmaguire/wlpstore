@@ -2,17 +2,17 @@
 %footer#mainFoot.gradientBack2
   #footCopy
     #fGroup1
-      %span &copy; 2013 Westlake Pro Inc. All Rights Reserved.
-      %span.noMobile 4101 Lankershim Blvd. North Hollywood, CA 91602
-      %span.noMobile (323) 845-1145
+      %span.noMobile &copy; 2013 Westlake Pro Inc. All Rights Reserved.
+      %span 4101 Lankershim Blvd. North Hollywood, CA 91602
+      %span (323) 845-1145
       %span.noMobile Hours: 9a-6p, M-F
     #fGroup2
       %span
         %a{:href => "https://maps.google.com/maps?daddr=4101+Lankershim+Blvd,+Los+Angeles,+CA+91602&hl=en&ll=34.142711,-118.357086&spn=0.041841,0.083685&sll=34.144202,-118.362441&sspn=0.01046,0.020921&gl=us&mra=ls&t=m&z=14", :target => "blank"} Directions
+      %span.noMobile
+        =link_to "Site Map", '/site_map'
       %span
-        %a{:href => "#"} Site Map
-      %span
-        %a{:href => "#"} Privacy Policy
+        =link_to "Privacy Policy", '/privacy_policy'
       %span
         Site by
         %a{:href => "mailto:david.w.martin@me.com"} edG Design
@@ -20,3 +20,4 @@
     %a.li.socialIcon{href: "http://www.linkedin.com/company/westlake-pro-inc-", target: "_blank"}
     %a.tw.socialIcon{href: "https://twitter.com/WestlakePro", target: "_blank"}
     %a.fb.socialIcon{href: "https://www.facebook.com/westlakepro", target: "_blank"}
+  %span.onlyMobile &copy; 2013 Westlake Pro Inc. All Rights Reserved.
