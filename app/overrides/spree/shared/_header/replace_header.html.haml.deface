@@ -1,8 +1,7 @@
 /replace '#header[data-hook]'
 %header#mainHead.gradientBack
   #logo
-    %h1
-      <%=link_to 'Westlake Pro', root_path %>
+    <%=link_to '', root_path %>
   #mainNavRow
     %nav#mainNav
       %ul

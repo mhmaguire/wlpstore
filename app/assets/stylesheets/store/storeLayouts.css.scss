@@ -2,7 +2,7 @@
 /////////Link & Text Styles
 body{
 	font-size:13px;
-	background-image:url(asset-path('sales_bg.jpg', image));
+	background-image:url(asset-path('wlp-new-bg.png', image));
 	background-attachment:fixed;
 	background-position:top center;
 	background-repeat:no-repeat;
@@ -106,20 +106,18 @@ body{
 	overflow:auto;
 }
 #logo{
-	margin:.4em 0 0;
-	height:inherit;
-	width:25%;
-	h1{
-		text-align:center;
-		font-size:2em;
-	  min-width: 170px;
-	  margin:2px 0 0;
-	  a{
-			font-family:'Futura', 'Myriad Pro', arial, sans-serif;
-		}
+	height:35px;
+	margin-top:5px;
+	float:left;
+	a{
+		display:block;
+		height:inherit;
+		width:260px;
+		background-image:url(asset-path('logoNew.png',image));
+		background-repeat:no-repeat;
 	}
 }
-#mainNavRow{width:75%;}
+#mainNavRow{float:right;}
 #mainNav{
 	width: -moz-fit-content;
   width: -webkit-fit-content;
@@ -129,20 +127,16 @@ body{
 	padding:5px 5px 0;
 	ul{margin:0;}
 	li {
-		margin-top:-7px;
-		margin-left:-3px;
+		height:40px;
+		margin:-7px 0 -4px -3px;
 		padding:.5em 0 0;
 		display:inline-block;
 		white-space:nowrap;
-		&:nth-child(9){
-			position:relative;
-			top:6px;
-		}
 		a {
 			display:inherit;
 			height:100%;
 			font-size:1.3em;
-			padding:.4em .5em .2em;
+			padding:.7em .5em 0;
 			border-right:$rightBorder;
 			border-left:$leftBorder;
 			&.noneL{border-left:none !important;}
@@ -150,21 +144,8 @@ body{
 		}
 	}
 }
-#logo, #mainNavRow{
-	position:relative;
-	float: left;
-}
-#avidLogo{
-	max-height:19px;
-	position: relative;
-	top:-2px;
-}
-#mainContent{
-	min-width:$contentMin;
-	max-width:$contentMax;
-	margin:$contentMargin;
-	height:100%;
-	padding-bottom:$footHeight;
+#content{
+	padding-bottom:20px;
 }
 #mainFoot{
 	width:100%;

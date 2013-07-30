@@ -2,7 +2,7 @@
 %footer#mainFoot.gradientBack2
   #footCopy
     #fGroup1
-      %span.noMobile &copy; 2013 Westlake Pro Inc. All Rights Reserved.
+      %span.noMobile &copy; 2013 Westlake Pro Inc.
       %span 4101 Lankershim Blvd. North Hollywood, CA 91602
       %span (323) 845-1145
       %span.noMobile Hours: 9a-6p, M-F

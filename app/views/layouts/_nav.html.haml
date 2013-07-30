@@ -1,5 +1,5 @@
 %li
-  %a.noneL(href= '#') Blah 
+  = link_to 'Store', '/home', :class => "noneL"
 %li
   = link_to 'Products', '/line_card'
 %li
@@ -13,5 +13,4 @@
 %li
   = link_to 'Careers', '/careers'
 %li
-  %a{href:'#', id: 'avidLink'}
-    =image_tag "avid-logo-small.png", :id => "avidLogo"
+  =link_to 'Avid Corner', '/avid',:id =>"avidLink"
