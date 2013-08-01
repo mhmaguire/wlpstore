@@ -104,6 +104,8 @@ body{
 	top:10px;
 	z-index: 8;
 	overflow:auto;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
 }
 #logo{
 	height:35px;
