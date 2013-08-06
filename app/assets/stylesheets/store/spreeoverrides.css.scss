@@ -1,3 +1,5 @@
+input{color:$textColor2 !important;}
+
 html input[type="submit"],html input[type="button"],
 html input[type="reset"],html button,html a.button {
 	border-radius: 5px;
@@ -58,6 +60,7 @@ div.product-image:hover, ul#product-thumbnails li.selected, ul#product-thumbnail
 }
 
 ul#products li {
+	&:nth-child(3n+1){clear:left;}
 	.product-image{
 		box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.5);
 		border-radius:5px;
