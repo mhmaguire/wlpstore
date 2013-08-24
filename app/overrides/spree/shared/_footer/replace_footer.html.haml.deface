@@ -12,7 +12,7 @@
       %span.noMobile
         <%=link_to "Site Map", '/site_map' %>
       %span
-        <%=link_to "Privacy Policy", '/privacy_policy' %>
+        <%=link_to "Site Policies", '/privacy_policy' %>
       %span
         Site by
         %a{:href => "mailto:david.w.martin@me.com"} edG Design

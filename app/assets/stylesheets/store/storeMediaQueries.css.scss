@@ -176,6 +176,7 @@ and (orientation : portrait) {
 		&:nth-child(odd){
 			margin-right:15px;
 		}
+		&:nth-child(3n+1){clear:none;}
 	}
 //end mobile styles
 }
